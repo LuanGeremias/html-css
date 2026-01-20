@@ -1,0 +1,32 @@
+body{
+    background-color: #14213d;
+}
+
+h1{ 
+    color: #fca311;
+}
+
+#principal{
+    text-align: center;
+}
+
+h2{
+    color: #e5e5e5;
+}
+
+p{
+    color: #e9c46a;
+    text-align: justify;
+}
+
+.basico{
+    color: rgb(99, 143, 45);
+}
+
+.intermediario{
+    color: rgb(132, 143, 45);
+}
+
+.avancado{
+    color: rgb(143, 45, 45);
+}

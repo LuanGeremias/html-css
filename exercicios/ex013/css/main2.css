@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(32, 31, 31);
+}
+
+h1{
+    color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    
+    justify-content: center;
+    
+}
+
+.item{
+    margin: 20px;
+    
+}
+
