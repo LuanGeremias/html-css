@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        .col1{
+            background-color: lightblue;
+        }
+
+        .col2{
+            background-color: rgb(240, 255, 246);
+        }
+
+        .col3{
+            background-color: rgb(255, 240, 251);
+        }
+
+        .col4{
+            background-color: rgb(253, 255, 240);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="col1"span="2">
+            <col class="col2">
+            <col class="col3">
+            <col class="col4">
+        </colgroup>
+        <caption>
+            Cadrastro
+        </caption>
+        <tbody>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>97</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Claúdio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Luan</td>
+                <td>M</td>
+                <td>16</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendendor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>81</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>99</td>
+                <td>Nutriocionista</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
