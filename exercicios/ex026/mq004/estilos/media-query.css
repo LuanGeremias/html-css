@@ -1,5 +1,81 @@
-/* Todas as demais mídias */
+/* Todas as demais mídias 
 
-@media print {
-    
+Typical Device Breakpoints
+pequenas telas: até 600px
+Celular: de 600px até 768
+Tablet: 768 até 992px
+desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+
+@media print { /* IMPRESSÃO */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url('../img/back-print.jpg'); /* desnecessário */
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita por Luan Geremias';
+        text-decoration: underline;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone, #print, #pc, #tv, #tablet {
+    display: none;
+    }
+
+    #print {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body {
+        background-image: url('../img/back-tablet.jpg');
+    }
+    #phone, #print, #pc, #tv {
+    display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body {
+        background-image: url('../img/back-pc.jpg');
+    }
+
+    #tablet, #print, #phone, #tv {
+    display: none;
+    }
+    #pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) { /* Grandes Telas */
+    body {
+        background-image: url('../img/back-tv.jpg');
+    }
+
+    #tablet, #print, #pc, #phone {
+    display: none;
+    }
+
+    #tv {
+        display: block;
+    }
 }
