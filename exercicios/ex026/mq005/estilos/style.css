@@ -4,6 +4,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: lightgray;
+}
 header {
     background-color: #8a8a8a;
 }
@@ -13,9 +16,40 @@ header h1 {
     padding: 10px;
 }
 
+nav > ul {
+    list-style-type: none;
+}
 
-a{
+nav a{
     text-decoration: none;
     color: white;
-    
+    background-color: #6f6f6f;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid rgb(82, 82, 82);
+}
+
+nav a:hover{
+    background-color: #8b8b8b;
+}
+
+main {
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.233);
+}
+
+article h2{
+    margin-bottom: 10px;
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
 }
