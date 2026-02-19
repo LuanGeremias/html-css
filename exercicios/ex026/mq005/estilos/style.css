@@ -16,11 +16,29 @@ header h1 {
     padding: 10px;
 }
 
-nav > ul {
+#burguer {
+    display: block;
+    background-color: #373737;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
     list-style-type: none;
 }
 
-nav a{
+menu a{
     text-decoration: none;
     color: white;
     background-color: #6f6f6f;
@@ -30,7 +48,7 @@ nav a{
     border-top: 2px solid rgb(82, 82, 82);
 }
 
-nav a:hover{
+menu a:hover{
     background-color: #8b8b8b;
 }
 
