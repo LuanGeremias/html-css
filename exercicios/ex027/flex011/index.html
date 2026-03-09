@@ -16,16 +16,33 @@
             flex-basis: 200px;
             border: 1px solid black;
             text-align: center;
+         
+        }
+
+        #A {
             flex-shrink: 1;
             flex-grow: 0;
+        }
+
+        #B {
+            flex-shrink: 1;
+            flex-grow:  2;
+        }
+
+        #C {
+            flex-shrink: 1;
+            flex-grow: 4;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <div class="item">A</div>
-        <div class="item" style="flex-grow: 4;">B</div>
-        <div class="item" style="flex-grow: 4;">C</div>
+        <div class="item" id="A">A</div>
+        <div class="item" id="B">B</div>
+        <div class="item" id="C">C</div>
     </div>
+    <script>
+        alert(80 / Math.pow(1.80,2));
+    </script>
 </body>
 </html>
