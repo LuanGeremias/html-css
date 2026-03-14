@@ -1,0 +1,9 @@
+header, header > nav {
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+nav > a{
+    width: 90vw;
+    text-align: center;
+}

@@ -47,11 +47,14 @@ header a:hover{
     transition: background-color 0.3s;
 }
 
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
 
 section{
-    min-width: 350px;
-    max-width: 650px;
-    margin: auto;
+    flex: 0 1 700px;
     background-color: #ffffff;
     padding: 10px;
     margin-top: 10px;
