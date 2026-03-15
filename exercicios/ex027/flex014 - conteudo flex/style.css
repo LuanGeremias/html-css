@@ -18,7 +18,45 @@ p, h1, h2{
     text-align: justify;
 }
 
-.flex-content{
-    background-color: #c8c8c8;
+
+h1, h2{
+    margin-bottom: 20px;
 }
 
+.flex-content{
+    background-color: #a8a8a8;
+    display: flex; 
+    flex-flow: column nowrap;
+}
+
+.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+.text-media {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.text{
+    flex: 1 1 500px;
+}
+
+div.media {
+    flex: 1 0 400px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
