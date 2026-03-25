@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com grid</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template: 100px 60px 500px 60px / 3fr 1fr;
+            gap: 10px;
+            background-color: rgb(80, 22, 135);
+        }
+
+        .topo {
+            grid-area: 1 / 1 / 2 / 3;
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu {
+            grid-area: 2 / 1 / 3 / 3;
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .principal {
+            grid-area: 3 / 1 / 4 / 2;
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .secundario {
+            grid-area: 3 / 2 / 4 / 3;
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .rodape {
+            grid-area: 4 / 1 / 5 / 3;
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="topo">topo</header>
+        <div class="menu">menu</div>
+        <main class="principal">principal</main>
+        <section class="secundario">secundario</section>
+        <footer class="rodape">rodape</footer>
+    </div>
+</body>
+</html>
